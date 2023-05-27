@@ -55,7 +55,7 @@ output sum,carry;
 assign sum=((a^b)^c;
 assign carry-=((a&b)|(b&c)|(c&a));
 endmodule
-
+~~~
 
 Logic symbol & Truthtable ![adder one](https://github.com/Rex0n15/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/130550796/2647b3da-5bc0-497e-b0f7-8f4d53492db0)
 
