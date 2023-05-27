@@ -35,22 +35,41 @@ Connect the supply (+5V) to the circuit
 Switch ON the main switch
 If the output is 1, then the led glows.
 ### 
-Program:![Uploading Screenshot (18).png…]()
-
-/*
 Program to design a half adder and full adder circuit and verify its truth table in quartus using Verilog programming.
 Developed by:Rexon JP 
 RegisterNumber:212222050048  
-*/
-Logic symbol & Truthtable![Uploading Screenshot (17).png…]()
+~~~
+Program:
+module halfadder(a,b,sum,carry);
+input a,b;
+output sum carry;
+xor (sum,a,b,);
+and(carry,a,b);
+endmodule
 
-RTL realization
+full adder
+program:
+module Fulladder(a,b,c,sum,carry);
+input a,b,c;
+output sum,carry;
+assign sum=((a^b)^c;
+assign carry-=((a&b)|(b&c)|(c&a));
+endmodule
+
+
+Logic symbol & Truthtable ![adder one](https://github.com/Rex0n15/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/130550796/2647b3da-5bc0-497e-b0f7-8f4d53492db0)
+
+
+RTL realization ![adder 2](https://github.com/Rex0n15/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/130550796/b641c909-45aa-4c9d-bcca-a5c4d50f56be)
+
 
 ### Output:
-### RTL
-### TIMING DIAGRAM
+### RTL ![adder 4](https://github.com/Rex0n15/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/130550796/b98fcf3d-c47f-4f1a-b1cc-d472d3192a34)
+
+### TIMING DIAGRAM ![adder5](https://github.com/Rex0n15/Exp-02-Implementation-of-Half-Adder-and-Full-Adder-circuit/assets/130550796/8f16a9d7-dcc6-4d56-9603-7c994293d8b1)
+
 
 
 ### TRUTH TABLE 
 
-### Result:
+### Result: Thd the experiment half and full adder experiment is submitted
